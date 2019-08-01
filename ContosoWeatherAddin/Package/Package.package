@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package dslVersion="1.0.0.0" 
+        Id="035f1e3e-2f2c-49ef-a03d-d1cfdeb76fb5" 
+        solutionId="035f1e3e-2f2c-49ef-a03d-d1cfdeb76fb5" 
+        xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel" 
+        name="ContosoWeatherAddin"
+        sharePointProductVersion="16.0">
+  <features>
+        <featureReference itemId="69e402a5-f414-4132-ba58-94f2b21706c1" />
+  </features>
+</package>

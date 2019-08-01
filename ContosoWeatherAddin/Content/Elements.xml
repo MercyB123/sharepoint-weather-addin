@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="Content">
+    <File Path="Content\App.css" Url="Content/App.css" ReplaceContent="TRUE" />
+    <File Path="Content\bootstrap.min.css" Url="Content/bootstrap.min.css" ReplaceContent="TRUE" />
+    <File Path="Content\font-awesome.min.css" Url="Content/font-awesome.min.css" ReplaceContent="TRUE" />
+    <File Path="Content\jqueryUI.css" Url="Content/jqueryUI.css" ReplaceContent="TRUE" />
+    <File Path="Content\weather-icons.min.css" Url="Content/weather-icons.min.css" ReplaceContent="TRUE" />
+    <File Path="Content\weather-icons-wind.min.css" Url="Content/weather-icons-wind.min.css" ReplaceContent="TRUE" />
+  </Module>
+</Elements>

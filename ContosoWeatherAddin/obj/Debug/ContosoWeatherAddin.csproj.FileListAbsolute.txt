@@ -1,0 +1,9 @@
+C:\Users\Mercy Bergholtz\source\repos\ContosoWeatherAddin\ContosoWeatherAddin\bin\Debug\ContosoWeatherAddin.pdb
+C:\Users\Mercy Bergholtz\source\repos\ContosoWeatherAddin\ContosoWeatherAddin\obj\Debug\ContosoWeatherAddin.csproj.CoreCompileInputs.cache
+C:\Users\Mercy Bergholtz\source\repos\ContosoWeatherAddin\ContosoWeatherAddin\obj\Debug\ContosoWeatherAddin.dll
+C:\Users\Mercy Bergholtz\source\repos\ContosoWeatherAddin\ContosoWeatherAddin\obj\Debug\ContosoWeatherAddin.pdb
+C:\Users\Mercy Bergholtz\Desktop\CodeBustersR1\ContosoWeatherAddin\bin\Debug\ContosoWeatherAddin.pdb
+C:\Users\Mercy Bergholtz\Desktop\CodeBustersR1\ContosoWeatherAddin\obj\Debug\ContosoWeatherAddin.csprojAssemblyReference.cache
+C:\Users\Mercy Bergholtz\Desktop\CodeBustersR1\ContosoWeatherAddin\obj\Debug\ContosoWeatherAddin.csproj.CoreCompileInputs.cache
+C:\Users\Mercy Bergholtz\Desktop\CodeBustersR1\ContosoWeatherAddin\obj\Debug\ContosoWeatherAddin.dll
+C:\Users\Mercy Bergholtz\Desktop\CodeBustersR1\ContosoWeatherAddin\obj\Debug\ContosoWeatherAddin.pdb

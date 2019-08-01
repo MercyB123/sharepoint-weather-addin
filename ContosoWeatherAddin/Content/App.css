@@ -1,0 +1,328 @@
+﻿/*big display of city temp at the top*/
+.banner10 {
+    background-color: #e6e4db;
+}
+
+/*button*/
+#convertTemp {
+    float: right;
+    margin-right: 3px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 8px;
+    box-shadow: 0px 17px 10px -10px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+    transition: all ease-in-out 300ms;
+}
+
+#convertTemp:hover {
+    box-shadow: 0px 37px 20px -20px rgba(0, 0, 0, 0.2);
+    -webkit-transform: translate(0px, -10px) scale(1.2);
+    transform: translate(0px, -10px) scale(1.2);
+ }
+
+.col-lg.convert {
+    border: 1px solid gray
+}
+
+.graph {
+    text-align: center;
+    height: 397px;
+    width: 488px;
+    margin-left: 2px;
+    background: url('http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/p5.png')
+}
+
+.icon {
+    position: relative;
+    background-size: cover;
+    height: 397px;
+    box-shadow: 6px 3px 5px 2px #a79e94;
+    width: 731px;
+    margin-left: 2px;
+    background: #2B60DE;
+   
+}
+
+#myChart {
+    width:610px;
+    height:380px
+}
+
+.row.top {
+    /*margin-right: -181px;*/
+    margin-left: -15px;
+}
+
+/*Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .col-xs-12 {
+        width: 50% !important;
+        margin-top: 45px;
+        margin-left: 44px;
+    }
+}
+
+/*Extra small devices (phones, 600px and down) Top columns */
+@media only screen and (max-width: 600px) {
+    .col-xs-12.top{
+    width: 45.6% !important;
+    margin-top: 45px;
+    margin-left: 44px;
+}
+
+}
+@media only screen and (max-width: 600px) {
+    #s4-titlerow {
+        width: 90% !important;
+       
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .col-sm-12 {
+        width: 41.66% !important;
+        margin-top: 45px;
+        margin-left: 44px;
+    }
+}
+@media only screen and (min-width: 600px) {
+    #s4-titlerow, .weeklyF {
+        text-align: left;
+        width: 90% !important;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .col-lg-6, .col-lg-5 {
+        width: 41.66% !important;
+        margin-left: 12px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    #s4-titlerow, .weeklyF {
+        width: 100% !important;
+        text-align: left
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .col-lg-6, .col-lg-5 {
+        width: 48.66% !important;
+        margin-left: 12px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    #s4-titlerow, .weeklyF {
+        width: 100% !important;
+        text-align: left
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .col-lg-6, .col-lg-5 {
+        width:48.66% !important;
+    }
+}
+
+/*media screen weekly forecast*/
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .col-sm-12.weekly {
+        width: 41.66% !important;
+        margin-top: 45px;
+        margin-left: 44px;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+     .col-md-2 {
+        width: 41.66% !important;
+       
+    }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .col-lg-2 {
+        width: 16.666% !important;
+        /*margin-left: 12px;*/
+    }
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .col-lg-2 {
+        width: 16.666% !important;
+    }
+}
+
+/*weekday columns*/
+.col-md-2 {
+    background: #2B60DE;
+    height: 615px;
+    margin-top: 3px;
+    border-right: 1px solid #b4b7b9;
+    border-radius: 14px;
+    width: 168px;
+    box-shadow: 3px 4px 2px #e8cfb0;
+}
+
+    /*buttons*/
+.btn-primary {
+        margin-top: 45px;
+}
+
+.btn-primary {
+        color: #fff;
+        background-color: #b4bec5 !important;
+        border-color: #c2c8ce !important;
+ }
+
+
+    /*row with daily data*/
+.row.daily {
+        /* background-color: #FF9800;*/
+ }
+
+    /*BIG Display of current day data*/
+.iconCurr.text-center.big {
+        font-size: 68px;
+        margin-top: -92px;
+        text-shadow: 5px 8px 6px #4e5d94;
+ }
+
+    /*BIG Display of current day date*/
+.tempCurr.text-center.big {
+        margin-top: 183px;
+        font-size: 58px;
+        color: white;
+ }
+
+
+    /*humidity*/
+.humidity {
+        margin-top: 49px
+ }
+
+
+    /*weather icons weekday*/
+
+.weekday {
+        margin-top: 49px;
+        font-size: 40px;
+        color: lightslategrey;
+        margin-bottom: 26px;
+        text-shadow: 5px 8px 6px saddlebrown;
+ }
+
+    /*weekday date section*/
+.text-uppercase {
+        text-transform: uppercase;
+        margin-top: 19px !important;
+ }
+
+
+    /*daily weather summary section*/
+.desc0.text-center, .desc1.text-center,
+.desc2.text-center, .desc3.text-center,
+.desc4.text-center, .desc5.text-center {
+        padding: 29px;
+        color: white;
+        font-size: 16px
+ }
+
+    /* paragragh tags*/
+p, .text-center {
+        color: white;
+        padding: 3px
+ }
+
+    /*weather icons*/
+.wi {
+        color: white;
+    }
+
+    /*Day and date of the week*/
+.text-uppercase.text-center {
+    background: dodgerblue;
+    padding: 1px;
+    border-radius: 10px;
+}
+
+
+.location.text-center {
+        font-weight: bold;
+        font-size: 21px;
+        margin-bottom: 55px;
+        margin-top: 31px;
+ }
+
+    /*month and year section*/
+#dates {
+        color: white
+ }
+
+    /*Weekly forecast div*/
+.weeklyF {
+        font-size: 25px;
+        font-weight: bold;
+        margin-bottom: 22px;
+        margin-top: 77px;
+        background-color: white;
+        color: red;
+        background: #f5f5c6;
+        height: 58px;
+        padding: 16px;
+        width: 100%
+ }
+
+    /*Sharepoint logo section*/
+.ms-siteicon-img {
+        /* display: block; */
+        max-width: 180px;
+        max-height: 64px;
+        display: none;
+ }
+
+.ms-cui-topBar2 {
+        border-bottom: 1px solid rgba(239, 239, 239, 0.78);
+        display: none;
+ }
+
+.ms-core-deltaSuiteLinks {
+        display: table-cell;
+        text-align: right;
+        vertical-align: middle;
+        display: none;
+ }
+
+ #DeltaPlaceHolderPageTitleInTitleArea {
+        /* display: none*/
+    }
+
+.ms-verticalAlignMiddle {
+    vertical-align: middle;
+    background: #f5f5c6 !important;
+}
+
+#s4-titlerow {
+    background: #f5f5c6;
+    width: 100% !important;
+}
+    /*Canvas js */
+.canvasjs-chart-canvas {
+        box-shadow: 10px 5px 6px 5px #65625a;
+ }
+
+.canvasjs-chart-container {
+        margin-top: 11px;
+ }
+
+
+    

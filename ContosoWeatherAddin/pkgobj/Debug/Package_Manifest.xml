@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Solution xmlns="http://schemas.microsoft.com/sharepoint/" SolutionId="035f1e3e-2f2c-49ef-a03d-d1cfdeb76fb5" SharePointProductVersion="16.0">
+  <FeatureManifests>
+    <FeatureManifest Location="ContosoWeatherAddin_Feature1\Feature.xml" />
+  </FeatureManifests>
+</Solution>

@@ -1,6 +1,4 @@
 ﻿$(document).ready(function () {
-    
-
     // Get the user's position
     if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(function (position) {
@@ -28,12 +26,9 @@
                 celsius: []
             };
 
-
             function insertData(temperatures) {
-                // Use operator here to assign F or C symbol to tempSymbol
+                // Use operator here to assign F or C symbol to tempSymbol during toggle
                 var tempSymbol = usingFahrenheit ? "&deg;F" : "&deg;C";
-
-
                 return $(temperatures).each(function (index, value) {
                     
                     $('.tempCurr').html('<i class="wi wi-thermometer"></i> ' + value + tempSymbol);
@@ -48,7 +43,6 @@
                 // invert our usingFahrenheit flag
                 usingFahrenheit = !usingFahrenheit;
 
-
                 if (usingFahrenheit) {
                     insertData(temperatures.fahrenheit);
                 } else {
@@ -56,14 +50,9 @@
                 }
             });
 
-
-
             // jQuery JSON call to pull in temperature and icon information
-           
             $.getJSON(fullURL, function (json) {
-
                 // Display weather information
-
                 var fahrenheitTemp;
                 var celsiusTemp;
                 var currentTemp;
@@ -85,7 +74,6 @@
 
                 var items = [];
 
-
                 $(hourlyData).each(function () {
 
                     var temperature = this.temperature.toFixed(0);
@@ -100,20 +88,15 @@
                     items.push("</ul>");
                     console.log('TIME IS... ' + time + " - " + 'TEMP IS... ' + temperature);
 
-
                     // create output with 'join()'
                     $("#dayNull").html(items.join(""));
                     
                 });
 
-
                 // Set up the loop to go through the daily array
                 for (i = 0; i < json.daily.data.length; i++) {
 
-                    // var day = (moment.unix(json.daily.data[i].time).format("dd"));
-
                     // Daily forecast report for each day of the week
-
                     // Format temp data
                     celsiusTemp = Math.round(json.daily.data[i].apparentTemperatureMax);
                     console.log('HEY c*** ' + celsiusTemp);
@@ -139,27 +122,12 @@
                     $('.tempMax' + i).html('Highs of: ' + tempMaxC + '&degC');
                     $('.tempMin' + i).html('Lows of: ' + tempMinC + '&degC');
 
-
-
                     // Store data in temperatures object
                     temperatures.fahrenheit.push(fahrenheitTemp);
                     temperatures.celsius.push(celsiusTemp);
 
                     temperatures.fahrenheit.push(currentFahrenheitTemp);
                     temperatures.celsius.push(currentTemp);
-
-                    //temperatures.fahrenheit.push(tempMinFahrenheit);
-                    //temperatures.celsius.push(tempMinC);
-
-                    //temperatures.fahrenheit.push(tempMaxFahrenheit);
-                    //temperatures.celsius.push(tempMaxC);
-
-
-                    //*****************************//
-                    //This section was to confirm that the day and Temp for the week matched
-                    //time = (moment.unix(json.daily.data[i].time).format("dd"));
-                    //console.log('TIME: ' + time + 'TEMP: ' + celsiusTemp)
-                    ////****************************//
 
                     icon = json.currently.icon;
                     $('.iconCurr').html("<i class='wi wi-forecast-io-" + icon + "'></i>");
@@ -267,15 +235,9 @@
                          
                             $('.windDir' + i).html('N');
                         }
-                        
-                    
-
-
-
                     //end wind dir
 
                     //Set up day name and display on page
-
                     dayName = moment().add(i, "day").format("ddd");
                     $('.day' + i).html(dayName);
 
@@ -289,10 +251,7 @@
                     var month = moment().format('ddd, MMMM, YYYY');
                     $('#month').html(month);
 
-                    //Display the year using Moment.js
-                    // var year = moment().format('YYYY');
-                    // $('#year').html(year);
-
+                    
                     //Display current time using Moment.js
                     var dateTimeString = moment().format("LT");
                     $(".time").html(dateTimeString);
@@ -352,14 +311,9 @@
                             },
                         })
 
-
-
                     })
 
                     //END DAILY CHART
-
-
-
                 }
 
                 // display temp data on page
@@ -367,70 +321,7 @@
 
             });
 
-
-
-
-
-            //START HOURLY CHART
-            
-            var dataPointsC = []
-
-            $.getJSON(fullURL, function (json) {
-                var hourlyData = (json.hourly.data);
-
-                $(hourlyData).each(function () {
-                    var temperature = Math.round(this.temperature);
-                    
-                    dataPointsC.push({
-                        x: new Date(this.time).getTime(),//time format did not work here.
-
-                        y: Math.round(this.temperature),
-                    });
-
-
-                })
-
-
-                var newChart = new CanvasJS.Chart("myChartContainer", {
-                    animationEnabled: true,
-                    theme: "light1", // "light1", "light2", "dark1", "dark2"
-                    title: {
-                        fontColor: "gray",
-                        marginTop: 10,
-                        fontSize: 15,
-                        text: "Temperature per Hour"
-                    },
-
-                    axisY: {
-
-                        title: "Temp",
-                        labelFontSize: 20,
-                        labelFontColor: "dimGrey"
-                    },
-                    axisX: {
-                        title: "Period",
-                        //valueFormatString: "hh:mm TT",
-                        labelAngle: -30
-                    },
-                    data: [{
-                        color: "red",
-                        type: "line",
-                        name: "Maximum Temp.",
-                        dataPoints: dataPointsC
-                    }]
-
-                });
-
-                newChart.render();
-
-            })
-
-            //END HOURLY CHART
-
-
-
             //Variables to get user's location using Google Maps API
-
             var googleAPIKey = "AIzaSyBHqPpUrThJKp1KZM5wxGvPiy58AwMdvCc";
             //console.log(otherAPIKey);
 
@@ -453,7 +344,6 @@
                 //start loop
                 for (i = 0; i < json.results[0].address_components.length; i++) {
 
-
                     var component = json.results[0].address_components[i];
 
                     if (component.types.includes('sublocality') || component.types.includes('locality')) {
@@ -472,15 +362,11 @@
                         console.log('HEY ' + storableLocation.registered_country_iso_code);
                     }
 
-
                     //Display User's location
                     $('.location').html(storableLocation.city + ', ' + storableLocation.country);
                 }
 
-
-
             });
-
 
         });
          
@@ -489,5 +375,4 @@
     else {
         console.log('geolocation does not exist.');
     }
-
-})
+ })

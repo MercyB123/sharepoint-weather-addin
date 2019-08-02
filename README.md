@@ -2,18 +2,18 @@ A SharePoint online Weather forecast Addin built in Visual studio. The App shows
 
 Tools and technologies used in the project are:-
 
-SharePoint Online
-Visual Studio
-Dark Sky Api
-Google Maps Api
-HTML 5 Geolocation
-Javascript
-Jquery
-JSON with Ajax REST API call
-HTML
-CSS
-Bootstrap
-Weather Icons
+SharePoint Online, 
+Visual Studio, 
+Dark Sky Api, 
+Google Maps Api, 
+HTML 5 Geolocation, 
+Javascript, 
+Jquery, 
+JSON with Ajax REST API call, 
+HTML, 
+CSS, 
+Bootstrap, 
+Weather Icons, 
 Moment js
 
 

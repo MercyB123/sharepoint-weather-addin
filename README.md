@@ -18,4 +18,4 @@ Moment js
 
 ****************************
 
-Click on the Pictures: gitpic1 and gitpic2 to have a visual idea of the App.
+Click on the Pictures: gitpic1.png and gitpic2.png to have a visual idea of the App.

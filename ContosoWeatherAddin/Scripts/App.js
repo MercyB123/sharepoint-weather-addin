@@ -5,7 +5,7 @@
             var lat = position.coords.latitude;
             var long = position.coords.longitude;
 
-            var apiKey = "YOUR KEY";
+            var apiKey = "151e33a27450ae43f0e65a3e302f63a6";
 
             //Dark Sky URL
             var weatherURL = "https://api.darksky.net/forecast/";
@@ -300,7 +300,7 @@
             });
 
             //Variables to get user's location using Google Maps API
-            var googleAPIKey = "YOUR OTHER KEY";
+            var googleAPIKey = "AIzaSyBHqPpUrThJKp1KZM5wxGvPiy58AwMdvCc";
             //console.log(otherAPIKey);
 
             //Google Maps URL

@@ -33,10 +33,6 @@
 
     <!-- Bootstrap Core JavaScript -->
     <script type="text/javascript" src="../Scripts/bootstrap.min.js"></script>
-
-    <!--Canvas js-->
-    <script type="text/javascript" src="https://canvasjs.com/assets/script/jquery-1.11.1.min.js"></script>
-    <script type="text/javascript" src="https://canvasjs.com/assets/script/jquery.canvasjs.min.js"></script>
     <!--chart js-->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.3.0/Chart.bundle.js"></script>
 

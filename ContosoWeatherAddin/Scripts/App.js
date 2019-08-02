@@ -69,29 +69,7 @@
                 var dayName;
                 var dayNum;
 
-                //get hourly data 
-                var hourlyData = (json.hourly.data);
-
-                var items = [];
-
-                $(hourlyData).each(function () {
-
-                    var temperature = this.temperature.toFixed(0);
-                    var myTime = this.time;
-                    var time = moment.unix(myTime).format("ddd HH:mm");
-
-                    // create html tags 
-                    items.push("<ul id = styled>");
-
-                    items.push("<li id = underlined>" + "<i class='wi wi-forecast-io-" + this.icon + "'></i>" + ' ' + ' ' + time + " - " + 'Temp: ' + temperature + 'C&deg;' + "</li>");
-
-                    items.push("</ul>");
-                    console.log('TIME IS... ' + time + " - " + 'TEMP IS... ' + temperature);
-
-                    // create output with 'join()'
-                    $("#dayNull").html(items.join(""));
-                    
-                });
+                
 
                 // Set up the loop to go through the daily array
                 for (i = 0; i < json.daily.data.length; i++) {

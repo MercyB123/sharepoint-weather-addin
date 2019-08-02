@@ -1,1 +1,1 @@
-C:\Users\Mercy Bergholtz\source\repos\ContosoWeatherAddin\ContosoWeatherAddin\bin\Debug\app.publish\1.0.0.2\ContosoWeatherAddin.app
+C:\Users\Mercy Bergholtz\Desktop\FinalWeatherApp\ContosoWeatherAddin\bin\Debug\app.publish\1.0.0.3\ContosoWeatherAddin.app

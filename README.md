@@ -13,3 +13,9 @@ CSS
 Bootstrap
 Weather Icons
 Moment js
+
+
+
+****************************
+
+Click on the Pictures: gitpic1 and gitpic2 to have a visual idea of the App.
